@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useWallet } from "../context/walletContext";
+import { useWallet } from "../context/WalletContext";
 import FhirForm, { type FhirFormData } from "../components/FhirForm";
 import { sha256Hex } from "../utils/hash";
 import ProvidersPanel from "../components/ProvidersPanel";
@@ -7,7 +7,7 @@ import LookupPanel from "../components/LookupPanel";
 import StatusPanel from "../components/StatusPanel";
 
 const SATOSHIS_TO_PAY = 10;
-const RECEIVING_ADDRESS = "your_receiving_address_here"; // TODO: update
+const RECEIVING_ADDRESS = "14rUsTzH1ecaiV2soyVJCsk95SS7L757sY"; // TODO: update
 
 const Dashboard: React.FC = () => {
   const { pubKey, connect, wallet, lastMessage, setLastMessage } = useWallet();

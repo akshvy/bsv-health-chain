@@ -1,5 +1,5 @@
 import React from "react";
-import { useWallet } from "../context/walletContext";
+import { useWallet } from "../context/WalletContext";
 
 const WalletButton: React.FC = () => {
   const { pubKey, connect, disconnect, lastMessage } = useWallet();
